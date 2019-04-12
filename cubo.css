@@ -1,0 +1,49 @@
+.fundo{
+  width: 744px;
+  height: 516px;
+  background-color: black;
+  perspective:800px;
+}
+.cubo{
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(25deg);
+ }
+.face{
+  position: absolute;
+  display:block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: center;
+  opacity: 0.5;
+  border: 1px solid white;
+  color: white
+}
+.frente{
+  background-color: darkgreen;
+  transform: translateZ(100px);
+}
+.direita{
+  background-color: darkgreen;
+  transform: translateZ(50px) translateX(50px) rotateY(90deg);
+}
+.esquerda{
+  background-color: darkgreen;
+  transform: translateZ(50px) translateX(-50px) rotateY(-90deg);
+}
+.baixo{
+  background-color: darkgreen;
+  transform: translateZ(50px) translateY(50px) rotateX(-90deg)
+}
+.cima{
+  background-color: darkgreen;
+  transform: translateZ(50px) translateY(-50px) rotateX(90deg)
+}
+.tras{
+  background-color: darkgreen;
+  transform: rotateY(180deg)
+}
